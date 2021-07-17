@@ -15,7 +15,7 @@ interface FileCache
      *
      * @return mixed Result of the callback.
      */
-    public function get(File $file, callable $callback);
+    public function get(File $file, callable $callback,string $ip);
 
     /**
      * Like `get` but deletes the cached file afterwards (if it is not used somewhere
